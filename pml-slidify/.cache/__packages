@@ -1,0 +1,11 @@
+base
+datasets
+graphics
+grDevices
+methods
+RColorBrewer
+Rcpp
+slidify
+stats
+utils
+wordcloud

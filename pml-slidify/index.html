@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Shiny App for Mining Tweets</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A Shiny App for Mining Tweets">
+  <meta name="author" content="purplesusy">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>A Shiny App for Mining Tweets</h1>
+    <h2></h2>
+    <p>purplesusy<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This presentation includes the following parts.</p>
+
+<ol class = "build incremental">
+<li>Introduction</li>
+<li>Input </li>
+<li>Output</li>
+<li>References</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This Shiny App searches tweets containing keywords and plots a wordcloud for those tweets. When you specify the search term, the date ranges and number of tweets, this App will parse relevant tweets using twitter&#39;s API and plot a wordcloud.</p>
+
+<p>App URL: <a href="http://purplesusy.shinyapps.io/twitter/">http://purplesusy.shinyapps.io/twitter/</a></p>
+
+<p>GitHub Repo: <a href="https://github.com/purplesusy/pml">https://github.com/purplesusy/pml</a></p>
+
+<p>R packages used:</p>
+
+<ul>
+<li>twitteR (twitter client for R)</li>
+<li>tm (text mining)</li>
+<li>wordcloud (wordclouds)</li>
+<li>RColorBrewer (color palettes)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Input</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Below lists contain the input fields. User can change those input fields and click &quot;Update&quot; to update the wordcloud.</p>
+
+<ul>
+<li>1. Search Word(s) - the default is &quot;machine learning&quot;</li>
+<li>2. Date Range - the defalt ending date is current system date and the default starting date is one day prior to system date</li>
+<li>3. Number of Tweets - the default is 100 tweets</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Output</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>After specifying the search word(s), date range, and number of tweets, a wordcloud for those tweets will be generated. </p>
+
+<p>Note: it takes a few seconds to generate the wordcloud.</p>
+
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>References</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The work presented in this Shiny App is inspired by the following excellent work/tutorials:</p>
+
+<ul>
+<li>Shiny Tutorial (<a href="http://shiny.rstudio.com/tutorial/">http://shiny.rstudio.com/tutorial/</a>)</li>
+<li>Mining Twitter with R (<a href="https://sites.google.com/site/miningtwitter/">https://sites.google.com/site/miningtwitter/</a>)</li>
+</ul>
+
+<p>Thank you!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Overview'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Introduction'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Input'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Output'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='References'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
